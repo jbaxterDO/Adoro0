@@ -6,7 +6,7 @@ on:
 jobs:
   ValidateModel:
     resources:
-      instance-type: C5
+      instance-type: P5000
     inputs:
       model:
         type: dataset
@@ -31,7 +31,7 @@ jobs:
     needs:
       - ValidateModel
     resources:
-      instance-type: C5
+      instance-type: P5000
     uses: script@v1
     with:
       script: |-
